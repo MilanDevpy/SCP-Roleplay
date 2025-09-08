@@ -40,5 +40,5 @@ Part.Anchored = true
 Part.CanCollide = false
 ```
 > [!WARNING]
-> Il ets important de mettre des noms exhaustif et précis à vos parts : c'est comme les variables ! (par exemple evitez les `Part n°12` ou les `Part Charismatique`, ne faites donc pas comme ce très mauvais exemple plus haut)
+> Il est important de mettre des noms exhaustif et précis à vos parts : c'est comme les variables ! (par exemple evitez les `Part n°12` ou les `Part Charismatique`, ne faites donc pas comme ce très mauvais exemple plus haut)
 >
