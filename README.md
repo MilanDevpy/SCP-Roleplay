@@ -46,17 +46,17 @@ Part.CanCollide = false
 
 | Fonction                                            | Description                                                                                                              |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `kill(name: string)`                                | **Tue** le joueur spécifié                                                                                               |
+| `kill(name: string)`                                | **Tue** le joueur spécifié                                                                                                |
 | `damage(name: string, amount: number)`             | **Inflige des dégâts** au joueur spécifié selon la quantité donnée                                                       |
 | `heal(name: string)`                                | **Restaure la santé** du joueur au maximum                                                                               |
 | `getPlayers()`                                      | **Te donne la liste** des noms de tous les joueurs sur le serveur                                                       |
-| `getPlayerHealth(name: string)`                     | **Te donne la santé actuelle** du joueur.<br>Retourne `-1` si le joueur n’est pas présent                               |
+| `getPlayerHealth(name: string)`                     | **Te donne la santé actuelle** du joueur.<br>Exemple : `-1` si le joueur n’est pas présent                               |
 | `setPlayerHealth(name: string, amount: number)`    | **Définit la santé** du joueur                                                                                           |
-| `getPlayerMaxHealth(name: string)`                 | **Te donne la santé maximale** du joueur.<br>Retourne `-1` si le joueur n’est pas présent                               |
+| `getPlayerMaxHealth(name: string)`                 | **Te donne la santé maximale** du joueur.<br>Exemple : `-1` si le joueur n’est pas présent                               |
 | `setPlayerMaxHealth(name: string, amount: number)` | **Définit la santé maximale** du joueur                                                                                  |
 | `getPlayerScore(name: string)`                      | **Te donne le score** du joueur                                                                                          |
 | `setPlayerScore(name: string, score: number = 0)`  | **Définit le score** du joueur                                                                                           |
-| `getPlayerPosition(name: string)`                   | **Te donne la position** du joueur dans la carte (`Vector3` / `CFrame`)                                                 |
+| `getPlayerPosition(name: string)`                   | **Te donne la position** du joueur (`Vector3` / `CFrame`)                                                               |
 | `setPlayerPosition(name: string, position: Vector3)` | **Définit la position** du joueur (`Vector3` / `CFrame`)                                                                |
 | `getPlayerKeycard(name: string)`                   | **Te donne le niveau de badge** (keycard) du joueur (ex. : "L4")                                                        |
 | `getTools(name: string)`                            | **Te donne la liste des outils** dans l’inventaire du joueur                                                            |
