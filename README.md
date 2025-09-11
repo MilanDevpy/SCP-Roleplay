@@ -42,6 +42,36 @@ Part.CanCollide = false
 > [!WARNING]
 > Il est important de mettre des noms exhaustif et précis à vos parts : c'est comme les variables ! (par exemple evitez les `Part n°12` ou les `Part Charismatique`, ne faites donc pas comme ce très mauvais exemple plus haut)
 >
+## Fonctions des Joueurs
+
+| Fonction                                            | Description                                                                                                              |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `kill(name: string)`                                | **Tue** le joueur spécifié                                                                                               |
+| `damage(name: string, amount: number)`             | **Inflige des dégâts** au joueur spécifié selon la quantité donnée                                                       |
+| `heal(name: string)`                                | **Restaure la santé** du joueur au maximum                                                                               |
+| `getPlayers()`                                      | **Te donne la liste** des noms de tous les joueurs sur le serveur                                                       |
+| `getPlayerHealth(name: string)`                     | **Te donne la santé actuelle** du joueur.<br>Retourne `-1` si le joueur n’est pas présent                               |
+| `setPlayerHealth(name: string, amount: number)`    | **Définit la santé** du joueur                                                                                           |
+| `getPlayerMaxHealth(name: string)`                 | **Te donne la santé maximale** du joueur.<br>Retourne `-1` si le joueur n’est pas présent                               |
+| `setPlayerMaxHealth(name: string, amount: number)` | **Définit la santé maximale** du joueur                                                                                  |
+| `getPlayerScore(name: string)`                      | **Te donne le score** du joueur                                                                                          |
+| `setPlayerScore(name: string, score: number = 0)`  | **Définit le score** du joueur                                                                                           |
+| `getPlayerPosition(name: string)`                   | **Te donne la position** du joueur dans la carte (`Vector3` / `CFrame`)                                                 |
+| `setPlayerPosition(name: string, position: Vector3)` | **Définit la position** du joueur (`Vector3` / `CFrame`)                                                                |
+| `getPlayerKeycard(name: string)`                   | **Te donne le niveau de badge** (keycard) du joueur (ex. : "L4")                                                        |
+| `getTools(name: string)`                            | **Te donne la liste des outils** dans l’inventaire du joueur                                                            |
+| `giveTool(name: string, tool: string)`             | **Donne un outil** au joueur.<br>Supporte aussi un objet Tool pour les outils personnalisés (décochage de `Handle`)   |
+| `removeTool(name: string, tool: string)`           | **Retire un outil** du joueur                                                                                             |
+| `getUserId(name: string)`                           | **Te donne l’ID utilisateur** (UserId) du joueur                                                                        |
+| `ownsGamepass(name: string, id: number)`           | **Te donne si le joueur possède** le gamepass spécifié                                                                  |
+| `ownsAsset(name: string, id: number)`              | **Te donne si le joueur possède** l’asset spécifié                                                                      |
+| `playEmote(target: string \| Instance, id: number, loop: boolean = false)` | **Joue une émote ou animation** sur le joueur.<br>Te donne deux fonctions : arrêter l’animation et ajuster sa vitesse |
+| `hasTool(name: string, tool: string)`              | **Te donne si le joueur possède** l’outil spécifié                                                                      |
+| `getPlayerCurrentTool(name: string)`               | **Te donne l’outil actuel** que le joueur utilise, ou `nil` si aucun                                                   |
+| `getPlayerIsInGroup(name: string, id: number)`     | **Te donne si le joueur est dans** le groupe spécifié                                                                   |
+| `getPlayerRankInGroup(name: string, id: number)`   | **Te donne le rang** du joueur dans le groupe (0–255)                                                                  |
+| `getPlayerRoleInGroup(name: string, id: number)`   | **Te donne le rôle** du joueur dans le groupe                                                                           |
+
 ### Fonctions d’Équipe
 | Fonction                                            | Description                                                                                                              |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
