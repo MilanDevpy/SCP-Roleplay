@@ -43,10 +43,9 @@ Part.CanCollide = false
 > Il est important de mettre des noms exhaustif et précis à vos parts : c'est comme les variables ! (par exemple evitez les `Part n°12` ou les `Part Charismatique`, ne faites donc pas comme ce très mauvais exemple plus haut)
 >
 ### Fonctions d’Équipe
-
-| **FONCTION**                              | **CE QU’ELLE FAIT**                                                                                                               |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `getTeams()`                               | Montre **toutes les équipes** du jeu. <br>(Exemple : `team[1]` = **nom de l’équipe**, `team[2]` = **couleur de l’équipe**.)        |
-| `getTeamMembers(team : string / BrickColor)`| Montre **tous les joueurs** d’une équipe. <br>Vous pouvez donner **le nom** ou **la couleur** de l’équipe.                        |
-| `getTeam(name : string)`                   | Montre **le nom** et **la couleur** de l’équipe d’un joueur. <br>(Exemple : `local nom, couleur = getTeam("NomDuJoueur")`.)       |
-| `setTeam(name : string, team : string / BrickColor)` | **Change l’équipe** d’un joueur. <br>Vous pouvez utiliser **le nom** ou **la couleur** de l’équipe.                              |
+| Fonction                                            | Description                                                                                                              |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `getTeams()`                                        | Affiche **toutes les équipes** du jeu.<br>Exemple : `team[1]` = **nom de l’équipe**, `team[2]` = **couleur de l’équipe** |
+| `getTeamMembers(team: string \| BrickColor)`        | Affiche **tous les joueurs** d’une équipe.<br>Vous pouvez donner **le nom** ou **la couleur** de l’équipe                |
+| `getTeam(name: string)`                             | Affiche **le nom** et **la couleur** de l’équipe d’un joueur.<br>Exemple : `local nom, couleur = getTeam("NomDuJoueur")` |
+| `setTeam(name: string, team: string \| BrickColor)` | **Change l’équipe** d’un joueur.<br>Vous pouvez utiliser **le nom** ou **la couleur** de l’équipe                        |
